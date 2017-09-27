@@ -136,7 +136,7 @@ public class talentsimilarity {
                 Connection conn = HbaseUtil.getHbaseConnection(ISONLINE);
                 
                 try{
-                    int count = 0;
+                    int count_put = 0;
                     ArrayList<Put> putList = new ArrayList();
                     while (f.hasNext()) {
                         count = 0;
@@ -217,11 +217,11 @@ public class talentsimilarity {
                                         p1.add(Bytes.toBytes("fmy"), Bytes.toBytes("similarity"), Bytes.toBytes(similarity_percent + "%"));
                                         putList.add(p1);
                                         
-                                        count = count + 2;
+                                        count_put = count_put + 2;
                                         
-                                        if(count >= BATCHSIZE){
+                                        if(count_put >= BATCHSIZE){
                                             HbaseUtil.putHbase("beisendw:talentSimilarity",putList,ISONLINE);
-                                            count = 0;
+                                            count_put = 0;
                                             putList.clear();
                                         }
                                     }
@@ -229,7 +229,7 @@ public class talentsimilarity {
                             }
                         }
                     }
-                    if(count > 0){
+                    if(count_put > 0){
                         HbaseUtil.putHbase("beisendw:talentSimilarity",putList,ISONLINE);
                     }
                 }catch(Exception e){
