@@ -7,8 +7,7 @@
     <groupId>com.beisen.bigdata</groupId>
     <artifactId>bigdata_similarity_sy</artifactId>
     <version>1.0-SNAPSHOT</version>
-    
-    <url>http://maven.apache.org</url>
+
     <properties>
         <encoding>UTF-8</encoding>
 
@@ -31,7 +30,7 @@
         <dependency>
             <groupId>com.beisen.bigdata</groupId>
             <artifactId>bigdata-helper-common</artifactId>
-            <version>0.0.4</version>
+            <version>0.0.3</version>
         </dependency>
         <dependency>
             <groupId>commons-cli</groupId>

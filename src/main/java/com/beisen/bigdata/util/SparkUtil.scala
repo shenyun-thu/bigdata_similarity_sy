@@ -19,9 +19,10 @@ object SparkUtil {
     * @return
     */
   def buildSparkContext(appName:String): SparkContext = {
-    System.setProperty("hadoop.home.dir", "D:\\hadoop-2.6.0")
+    System.setProperty("hadoop.home.dir", "/usr/local/hadoop")
     val conf = new SparkConf
     conf.setAppName(appName)
+    conf.set("spark.executor.heartbeatInterval","30s")
     val sc = new SparkContext(conf)
     sc
   }
@@ -120,4 +121,6 @@ object SparkUtil {
       classOf[org.apache.hadoop.hbase.io.ImmutableBytesWritable],
       classOf[org.apache.hadoop.hbase.client.Result]).map(_._2)
   }
+
+
 }

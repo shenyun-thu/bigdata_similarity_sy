@@ -5,7 +5,7 @@ import java.util
 import java.util.{Calendar, Date}
 
 import org.apache.hadoop.conf.Configuration
-import org.apache.hadoop.hbase.client._
+import org.apache.hadoop.hbase.client.{BufferedMutator, _}
 import org.apache.hadoop.hbase.filter.CompareFilter.CompareOp
 import org.apache.hadoop.hbase.filter.FilterList.Operator
 import org.apache.hadoop.hbase.filter.{Filter, FilterList, SingleColumnValueFilter}
@@ -20,21 +20,20 @@ object HbaseUtil {
   private val logger = Logger.getLogger(this.getClass.getName)
 
   /**
-    * 写入HBase
+    * 批量删除
     *
     * @param tableName
-    * @param putList
+    * @param deleteList
     * @param isOnline
-    *  是否线上HBASE
     * @return
     */
-  def putHbase(tableName: String, putList: util.List[Put], isOnline : Boolean): Boolean = {
+  def mutiDelete(tableName: String, deleteList: util.List[Delete], isOnline: Boolean): Boolean = {
     var conn: Connection = null
     var table: Table = null
     try {
       conn = getHbaseConnection(isOnline)
       table = conn.getTable(TableName.valueOf(tableName))
-      table.put(putList)
+      table.delete(deleteList)
       true
     } catch {
       case e: Exception => logger.error(e)
@@ -51,74 +50,50 @@ object HbaseUtil {
 
   /**
     * 设置Hbase数据增量读取过滤条件
+    *
     * @param scan
     * @param backwardDayRange
     */
-  def setIncrementalFilter(scan : Scan, backwardDayRange : Integer) : Unit={
-    if(backwardDayRange <= 0){
+  def setIncrementalFilter(scan: Scan, backwardDayRange: Integer): Unit = {
+    if (backwardDayRange <= 0) {
       logger.info("全量任务")
-      return
+    } else {
+      val FAMILY_BYTE_0 = "0".getBytes
+
+      // 增量导入添加时间过滤
+      val insertTimeBytes = Bytes.toBytes("ETLINSERTTIME")
+      scan.addColumn(FAMILY_BYTE_0, insertTimeBytes)
+      val beginDateSdf = new SimpleDateFormat("yyyy-MM-dd 00:00:00.000")
+      val endDateSdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.000")
+      val cal = Calendar.getInstance
+      cal.add(Calendar.DATE, -backwardDayRange)
+      val beginDate = beginDateSdf.format(cal.getTime)
+      val endDate = endDateSdf.format(new Date)
+
+      logger.info("增量任务" + beginDate + "——" + endDate)
+      val startFilter = new SingleColumnValueFilter(FAMILY_BYTE_0, insertTimeBytes, CompareOp.GREATER_OR_EQUAL, Bytes.toBytes(beginDate))
+      val endFilter = new SingleColumnValueFilter(FAMILY_BYTE_0, insertTimeBytes, CompareOp.LESS, Bytes.toBytes(endDate))
+      startFilter.setFilterIfMissing(true)
+      endFilter.setFilterIfMissing(true)
+      val filters = new util.ArrayList[Filter]
+      filters.add(startFilter)
+      filters.add(endFilter)
+      val filterList = new FilterList(Operator.MUST_PASS_ALL, filters)
+      scan.setFilter(filterList)
     }
-    val FAMILY_BYTE_0 = "0".getBytes
-
-    // 增量导入添加时间过滤
-    val insertTimeBytes = Bytes.toBytes("ETLINSERTTIME")
-    scan.addColumn(FAMILY_BYTE_0, insertTimeBytes)
-    val sdf = new SimpleDateFormat("yyyy-MM-dd 00:00:00.000")
-    val cal = Calendar.getInstance
-    cal.add(Calendar.DATE, -backwardDayRange)
-    val beginDate = sdf.format(cal.getTime)
-    val endDate = sdf.format(new Date)
-
-    logger.info("增量任务" + beginDate + "——" + endDate)
-    val startFilter = new SingleColumnValueFilter(FAMILY_BYTE_0, insertTimeBytes, CompareOp.GREATER_OR_EQUAL, Bytes.toBytes(beginDate))
-    val endFilter = new SingleColumnValueFilter(FAMILY_BYTE_0, insertTimeBytes, CompareOp.LESS, Bytes.toBytes(endDate))
-    startFilter.setFilterIfMissing(true)
-    endFilter.setFilterIfMissing(true)
-    val filters = new util.ArrayList[Filter]
-    filters.add(startFilter)
-    filters.add(endFilter)
-    val filterList = new FilterList(Operator.MUST_PASS_ALL, filters)
-    scan.setFilter(filterList)
-  }
-
-  /**
-    * 设置Hbase数据增量读取过滤条件
-    *
-    * @param scan
-    * @param beginDate
-    * @param endDate
-    */
-  def setIncrementalFilter(scan: Scan,beginDate:Date, endDate: Date): Unit = {
-    val FAMILY_BYTE_0 = "0".getBytes
-    val sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-    // 增量导入添加时间过滤
-    val insertTimeBytes = Bytes.toBytes("ETLINSERTTIME")
-    scan.addColumn(FAMILY_BYTE_0, insertTimeBytes)
-
-
-    logger.info("增量任务" + sdf.format(beginDate) + "——" + sdf.format(endDate))
-    val startFilter = new SingleColumnValueFilter(FAMILY_BYTE_0, insertTimeBytes, CompareOp.GREATER_OR_EQUAL, Bytes.toBytes(sdf.format(beginDate)))
-    val endFilter = new SingleColumnValueFilter(FAMILY_BYTE_0, insertTimeBytes, CompareOp.LESS, Bytes.toBytes(sdf.format(endDate)))
-    startFilter.setFilterIfMissing(true)
-    endFilter.setFilterIfMissing(true)
-    val filters = new util.ArrayList[Filter]
-    filters.add(startFilter)
-    filters.add(endFilter)
-    val filterList = new FilterList(Operator.MUST_PASS_ALL, filters)
-    scan.setFilter(filterList)
   }
 
   /**
     * 创建Hbase连接
+    *
     * @param isOnLine
     * @return
     */
-  def getHbaseConnection(isOnLine : Boolean) : Connection ={
+  def getHbaseConnection(isOnLine: Boolean): Connection = {
     val conf = new Configuration
-    if(isOnLine) {
+    if (isOnLine) {
       conf.set("hbase.zookeeper.quorum", "tjhadoop00,tjhadoop01,tjhadoop02")
-    }else {
+    } else {
       conf.set("hbase.zookeeper.quorum", "hdfs00,hdfs01,hdfs02")
     }
     conf.set("hbase.client.keyvalue.maxsize","524288000");//
