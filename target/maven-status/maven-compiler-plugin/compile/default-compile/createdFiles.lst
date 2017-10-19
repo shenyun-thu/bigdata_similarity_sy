@@ -1,8 +1,7 @@
-com\beisen\bigdata\similarity_cal\AssessmentTalentSimilarity$1.class
+com\beisen\bigdata\similarity_cal\talentsimilarity$1.class
+com\beisen\bigdata\similarity_cal\talentsimilarity$3.class
+com\beisen\bigdata\similarity_cal\talentsimilarity$2.class
 com\beisen\bigdata\similarity_cal\person.class
-com\beisen\bigdata\similarity_cal\AssessmentTalentSimilarity$3.class
-com\beisen\bigdata\similarity_cal\AssessmentTalentSimilarity$2.class
-com\beisen\bigdata\similarity_cal\AssessmentTalentSimilarity.class
 com\beisen\bigdata\similarity_cal\test.class
-com\beisen\bigdata\util\RowKeyUtil.class
+com\beisen\bigdata\similarity_cal\talentsimilarity.class
 com\beisen\bigdata\similarity_cal\createTable.class
