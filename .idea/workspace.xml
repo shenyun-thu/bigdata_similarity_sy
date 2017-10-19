@@ -1,278 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b673dba9-adf8-45ce-80f3-238a294d42e8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/bigdata_similarity_sy-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/LibSVM-lib-1.0.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/RoaringBitmap-0.5.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/SMOTE-1.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/accessors-smart-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/akka-actor_2.10-2.3.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/akka-remote_2.10-2.3.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/akka-slf4j_2.10-2.3.11.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/all-1.1.2.pom" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/amqp-client-3.6.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/ansj_seg-3.7.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/antisamy-1.4.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/aopalliance-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/apacheds-i18n-2.0.0-M15.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/apacheds-kerberos-codec-2.0.0-M15.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/api-asn1-api-1.0.0-M20.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/api-util-1.0.0-M20.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/arpack_combined_all-0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/asm-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/asm-5.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/avro-1.7.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/avro-ipc-1.7.7-tests.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/avro-ipc-1.7.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/avro-mapred-1.7.7-hadoop2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/batik-css-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/batik-ext-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/batik-util-1.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/bigdata-graphdatabase-0.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/bigdata-helper-common-0.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/bigdata-helper-hbase-0.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/bigdata-helper-spark-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/bigdata-standarddata-0.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/bounce-0.18.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/breeze-macros_2.10-0.11.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/breeze_2.10-0.11.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/bsh-core-2.0b4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/chill-java-0.5.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/chill_2.10-0.5.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-beanutils-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-beanutils-core-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-cli-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-codec-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-collections-3.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-compiler-2.7.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-compress-1.4.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-configuration-1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-daemon-1.0.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-digester-1.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-el-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-fileupload-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-httpclient-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-io-2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-lang-2.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-lang3-3.3.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-logging-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-math-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-math3-3.4.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-net-2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/commons-pool2-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/compress-lzf-1.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/config-1.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/core-1.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/curator-client-2.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/curator-framework-2.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/curator-recipes-2.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/disruptor-3.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/dom4j-1.6.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/elasticsearch-1.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/esapi-2.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/fastjson-1.2.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/findbugs-annotations-1.3.9-1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/flume-ng-configuration-1.6.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/flume-ng-core-1.6.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/flume-ng-sdk-1.6.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/gmbal-api-only-3.0.0-b023.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/grizzly-framework-2.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/grizzly-http-2.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/grizzly-http-server-2.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/grizzly-http-servlet-2.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/grizzly-rcm-2.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/gson-2.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/guava-12.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/guice-3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/guice-servlet-3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-annotations-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-client-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-common-1.1.5-tests.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-common-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-hadoop-compat-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-hadoop2-compat-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-prefix-tree-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-procedure-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-protocol-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/hbase-server-1.1.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/htrace-core-3.1.0-incubating.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/httpclient-4.2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/httpcore-4.2.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/ivy-2.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jackson-annotations-2.4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jackson-core-2.4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jackson-core-asl-1.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jackson-databind-2.4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jackson-jaxrs-1.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jackson-mapper-asl-1.9.13.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jackson-module-scala_2.10-2.4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jackson-xc-1.8.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jamon-runtime-2.3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/janino-2.7.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jasper-compiler-5.5.23.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jasper-runtime-5.5.23.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/java-cup-11b-2015.03.26.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/java-cup-11b-runtime-2015.03.26.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/javax.inject-1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/javax.servlet-3.0.0.v201112011016.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/javax.servlet-3.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/javax.servlet-api-3.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jaxb-api-2.2.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jaxb-core-2.2.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jaxb-impl-2.2.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jaxen-1.1.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jcl-over-slf4j-1.7.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jcodings-1.0.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jedis-2.8.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jersey-client-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jersey-core-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jersey-grizzly2-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jersey-guice-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jersey-json-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jersey-server-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jersey-test-framework-core-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jersey-test-framework-grizzly2-1.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jets3t-0.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jettison-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jetty-6.1.26.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jetty-sslengine-6.1.26.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jetty-util-6.1.26.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jieba-analysis-1.0.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jniloader-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/joda-time-2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/joni-2.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jsch-0.1.53.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/json-path-2.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/json-smart-2.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/json4s-ast_2.10-3.2.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/json4s-core_2.10-3.2.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/json4s-jackson_2.10-3.2.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jsp-2.1-6.1.14.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jsp-api-2.1-6.1.14.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jsr305-1.3.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jtransforms-2.4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/jul-to-slf4j-1.7.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/kafka-clients-0.8.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/kafka_2.10-0.8.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/kryo-2.22.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/leveldbjni-all-1.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/log4j-1.2.17.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-analyzers-common-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-codecs-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-core-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-grouping-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-highlighter-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-join-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-memory-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-misc-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-queries-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-queryparser-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-sandbox-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-spatial-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lucene-suggest-4.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/lz4-1.3.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/management-api-3.0.0-b012.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/mesos-0.21.1-shaded-protobuf.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/metrics-core-2.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/metrics-core-3.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/metrics-graphite-3.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/metrics-json-3.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/metrics-jvm-3.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/mina-core-2.0.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/mtj-1.0.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/mysql-connector-java-5.1.37.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/native_ref-java-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/native_system-java-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/nekohtml-1.9.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/neo4j-java-driver-1.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-java-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_ref-linux-armhf-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_ref-linux-i686-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_ref-linux-x86_64-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_ref-osx-x86_64-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_ref-win-i686-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_ref-win-x86_64-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_system-linux-armhf-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_system-linux-i686-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_system-linux-x86_64-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_system-osx-x86_64-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_system-win-i686-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netlib-native_system-win-x86_64-1.1-natives.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netty-3.8.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/netty-all-4.0.29.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/opencsv-2.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/oro-2.0.8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/paranamer-2.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/parquet-column-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/parquet-common-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/parquet-encoding-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/parquet-format-2.3.0-incubating.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/parquet-generator-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/parquet-hadoop-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/parquet-jackson-1.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/pmml-agent-1.1.15.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/pmml-model-1.1.15.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/pmml-schema-1.1.15.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/protobuf-java-2.5.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/py4j-0.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/pyrolite-4.9.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/quasiquotes_2.10-2.0.0-M8.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/scala-compiler-2.10.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/scala-library-2.10.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/scala-reflect-2.10.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/scalap-2.10.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/serializer-2.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/servlet-api-2.5-6.1.14.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/servlet-api-2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/slf4j-api-1.7.16.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/slf4j-log4j12-1.7.10.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/snappy-java-1.1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/spatial4j-0.4.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/spire-macros_2.10-0.7.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/spire_2.10-0.7.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/sqlite-jdbc-3.8.11.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/sqljdbc4-4.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/stax-api-1.0-2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/stream-2.7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/tachyon-client-0.8.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/tachyon-underfs-hdfs-0.8.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/tachyon-underfs-local-0.8.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/tachyon-underfs-s3-0.8.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/uncommons-maths-1.2.2a.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/unused-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/weka-dev-3.9.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/weka-stable-3.8.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/xalan-2.7.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/xbean-asm5-shaded-4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/xercesImpl-2.9.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/xgboost4j-0.7.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/xml-apis-1.3.04.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/xml-apis-ext-1.3.04.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/xmlenc-0.52.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/xom-1.2.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/xz-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/zkclient-0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-resumeanalysis/lib/zookeeper-3.4.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/bigdata-talentcenter/lib/bigdata-helper-common-0.0.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes.1402465949.timestamp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bigdata-talentcenter/bigdata_similarity_sy-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/bigdata-talentcenter/bigdata_similarity_sy-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bigdata-talentcenter/lib/bigdata-helper-common-0.0.3.jar" afterPath="$PROJECT_DIR$/target/bigdata-talentcenter/lib/bigdata-helper-common-0.0.3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bigdata-talentcenter/lib/bigdata-standarddata-0.2.1.jar" afterPath="$PROJECT_DIR$/target/bigdata-talentcenter/lib/bigdata-standarddata-0.2.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/bigdata_similarity_sy-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/bigdata_similarity_sy-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/beisen/bigdata/similarity_cal/createTable.class" afterPath="$PROJECT_DIR$/target/classes/com/beisen/bigdata/similarity_cal/createTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/beisen/bigdata/similarity_cal/person.class" afterPath="$PROJECT_DIR$/target/classes/com/beisen/bigdata/similarity_cal/person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/createTable.java" afterPath="$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/createTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/person.java" afterPath="$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/talentsimilarity.java" afterPath="$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/talentsimilarity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-    </list>
+    <list default="true" id="b673dba9-adf8-45ce-80f3-238a294d42e8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -296,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="talentsimilarity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="talentsimilarity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/talentsimilarity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="419">
@@ -304,16 +33,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="record" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/record">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -881,12 +600,12 @@
       <workItem from="1508292107765" duration="703000" />
       <workItem from="1508308080027" duration="7000" />
       <workItem from="1508316876479" duration="2995000" />
-      <workItem from="1508374208705" duration="13932000" />
+      <workItem from="1508374208705" duration="14558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44157000" />
+    <option name="totallyTimeSpent" value="44783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1222,6 +941,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/record">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/talentsimilarity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
@@ -1229,14 +956,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/beisen/bigdata/similarity_cal/record">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
