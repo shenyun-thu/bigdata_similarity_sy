@@ -19,20 +19,26 @@ import com.beisen.bigdata.util.SparkUtil;
 import org.apache.spark.api.java.function.PairFunction;
 import org.apache.spark.api.java.function.VoidFunction;
 import scala.Tuple2;
+import scala.tools.cmd.gen.AnyVals;
 
 public class talentsimilarity {
     
     private static final Logger logger = Logger.getLogger(talentsimilarity.class);
     
     private static ArrayList<person> p = new ArrayList<>(); //使用动态数组存储信息
-    private static double average_score_limit;//平均分最低限制 可以动态调整
-    private static double max_limit = 2.0;//各个维度上对应的差值最大限度
-    private static double similarity_limit = 80.0;//相似度限制
+    private static double average_score_limit = 7.0;//平均分最低限制 可以动态调整
+    private static double max_limit = 1.4;//各个维度上对应的差值最大限度
+    private static double similarity_limit = 90;//相似度限制
     private static int nums_limit = 10;//维度数量限制
-
     private static boolean IS_ONLINE = true;
 
-    public static void main(String[] args) throws Exception {
+    public static void main(final String[] args) throws Exception {
+        
+        String[] str = args[0].split(",");
+//        max_limit = Double.parseDouble(args[1]);//1.4
+//        similarity_limit = Double.parseDouble(args[2]);//90
+//        nums_limit = Integer.parseInt(args[3]);//10
+//        average_score_limit = Double.parseDouble(args[4]);//7
         SparkConf conf1 = new SparkConf();
         conf1.setAppName("talent_similarity");
         JavaSparkContext jsc = new JavaSparkContext(conf1);
@@ -45,9 +51,15 @@ public class talentsimilarity {
             public Boolean call(Tuple2<ImmutableBytesWritable, Result> f) throws Exception {
                 Result result = f._2;
                 String tenantId = new String(result.getValue("0".getBytes(),"TENANTID".getBytes()));
-                if (tenantId != null) {
+                if (args[0].equals("*")) {
                     return new Boolean(true);
-
+                }
+                else{
+                    for(int i = 0;i< str.length;i++){
+                        if(str[i].equals(tenantId)){
+                            return new Boolean(true);
+                        }
+                    }
                 }
                 return new Boolean(false);
             }
@@ -81,7 +93,7 @@ public class talentsimilarity {
             @Override
             public void call(Iterator<Tuple2<String, Iterable<String>>> f) throws Exception {
                 Connection conn = HbaseUtil.getHbaseConnection(IS_ONLINE);
-                BufferedMutator mutator = HbaseUtil.getMutator(conn,"beisendw:talentSimilarity_final");
+                BufferedMutator mutator = HbaseUtil.getMutator(conn,"beisendw:talentSimilarity_eccompetenceuserresultinfo");
                 try{
                    while (f.hasNext()) {
                         p.clear();//对于每一个key值清空p中的存储
@@ -110,10 +122,8 @@ public class talentsimilarity {
                         
                         //这里可以根据数据量和数据分布对平均数进行动态修改
                         if (is_percent) {
-                            average_score_limit = 70.0;
-                        } else {
-                            average_score_limit = 7.0;
-                        }
+                            average_score_limit *= 10;
+                        } 
 
                         //对平均分不符合限制的直接从数组里删除
                         for (int i = 0,len = p.size();i < len;i++) {
@@ -174,10 +184,10 @@ public class talentsimilarity {
                                         put.addColumn("fmy".getBytes(),"similarity".getBytes(),(similarity_percent + "%").getBytes());
                                         mutator.mutate(put);
 
-                                        String row_key1 = temp_key + "_" + p.get(i).id + p.get(j).user_id + "_" + p.get(i).user_id;
-                                        Put put1 = new Put(Bytes.toBytes(row_key1));
-                                        put1.addColumn("fmy".getBytes(),"similarity".getBytes(),(similarity_percent + "%").getBytes());
-                                        mutator.mutate(put1);
+//                                        String row_key1 = temp_key + "_" + p.get(i).id + p.get(j).user_id + "_" + p.get(i).user_id;
+//                                        Put put1 = new Put(Bytes.toBytes(row_key1));
+//                                        put1.addColumn("fmy".getBytes(),"similarity".getBytes(),(similarity_percent + "%").getBytes());
+//                                        mutator.mutate(put1);
                                         
                                     }
                                 }
