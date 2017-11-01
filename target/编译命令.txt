@@ -1,0 +1,1 @@
+/usr/local/spark/bin/spark-submit --num-executors 20 --executor-memory 2g --class com.beisen.bigdata.similarity_cal.talentsimilarity  --master yarn-cluster /home/hadoop/debug/bigdata-talent-similarity/bigdata_similarity_sy-for_eccompetenceuserresultinfo.jar 105676,100102,110006,101109,103359,101092,101099,101098,103352,103350,101110,101111,100969
