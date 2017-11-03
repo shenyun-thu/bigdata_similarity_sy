@@ -44,7 +44,7 @@ public class createTable {
     public static void main(String[] args) throws Exception{
         //create table
         Configuration conf2 = HBaseConfiguration.create();
-        String tableName = "beisendw:talentSimilarity_RUITUUSERRESULTINFO";
+        String tableName = "beisendw:talentSimilarity_test";
         conf2.set("hbase.zookeeper.property.clientPort", "2181");
         conf2.set("hbase.zookeeper.quorum", "tjhadoop00,tjhadoop01,tjhadoop02");
      //   conf2.set("hbase.zookeeper.quorum", "hdfs00,hdfs01,hdfs02");

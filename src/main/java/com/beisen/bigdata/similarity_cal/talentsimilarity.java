@@ -1,6 +1,5 @@
 package com.beisen.bigdata.similarity_cal;
 
-
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import com.beisen.bigdata.util.HbaseUtil;
@@ -21,17 +20,16 @@ import scala.Tuple2;
 public class talentsimilarity {
     
     private static final Logger logger = Logger.getLogger(talentsimilarity.class);
+    // BEISENTALENTDW.ASSESSMENT_ECCOMPETENCEUSERRESULTINFO,BEISENTALENTDW.ASSESSMENT_MCCOMPETENCEUSERRESULTINFO,
+    // BEISENTALENTDW.ASSESSMENT_ABILITYUSERRESULTINFO,BEISENTALENTDW.ASSESSMENT_RUITUUSERRESULTINFO
     
-
     private static boolean IS_ONLINE = true;
-   // BEISENTALENTDW.ASSESSMENT_ECCOMPETENCEUSERRESULTINFO,BEISENTALENTDW.ASSESSMENT_MCCOMPETENCEUSERRESULTINFO,BEISENTALENTDW.ASSESSMENT_ABILITYUSERRESULTINFO,BEISENTALENTDW.ASSESSMENT_RUITUUSERRESULTINFO
+    
     public static void cal_similarity(String tenantIds,String tableNames,JavaSparkContext jsc){
-        
         String[] str = tenantIds.split(",");
         Scan scan = new Scan();
         Configuration conf = SparkUtil.buildHbaseConfig(tableNames,scan,IS_ONLINE);
         JavaPairRDD<ImmutableBytesWritable, Result> testRdd = jsc.newAPIHadoopRDD(conf, TableInputFormat.class, ImmutableBytesWritable.class, Result.class);
-
         testRdd.filter(f -> {
             Result result = f._2;
             String tenantId = new String(result.getValue("0".getBytes(),"TENANTID".getBytes()));
@@ -95,9 +93,9 @@ public class talentsimilarity {
                     dim_limit = 4;
                 }else if(tableNames.equals("BEISENTALENTDW.ASSESSMENT_ABILITYUSERRESULTINFO")){
                     average_score_limit = 6.0;
-                    max_limit_1 = 2;
-                    max_limit_2 = 2;
-                    similarity_limit_1 = 80.0;
+                    max_limit_1 = 2.0;
+                    max_limit_2 = 2.0;
+                    similarity_limit_1 = 83.0;
                     similarity_limit_2 = 80.0;
                     similarity_limit = 80.0;
                     dim_limit = 4;
@@ -112,7 +110,7 @@ public class talentsimilarity {
                 }
                 
                 Connection conn = HbaseUtil.getHbaseConnection(IS_ONLINE);
-                BufferedMutator mutator = HbaseUtil.getMutator(conn,"beisendw:talentSimilarity_"+tableNames.split("_")[1]);
+                BufferedMutator mutator = HbaseUtil.getMutator(conn,"beisendw:talentSimilarity_test");
                 try{
                     while (f.hasNext()) {
                         p.clear();//对于每一个key值清空p中的存储
@@ -193,9 +191,7 @@ public class talentsimilarity {
 
                                     }
                                 }
-
                                 if (can_cal) {
-
                                     //计算欧氏距离
                                     for (int k = 1; k <= p.get(i).num; k++) {
                                         ans += (p.get(i).scores[k] - p.get(j).scores[k]) * (p.get(i).scores[k] - p.get(j).scores[k]);

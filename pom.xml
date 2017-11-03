@@ -6,7 +6,7 @@
 
     <groupId>com.beisen.bigdata</groupId>
     <artifactId>bigdata_similarity_sy</artifactId>
-    <version>test_6</version>
+    <version>test_version</version>
 
     <properties>
         <encoding>UTF-8</encoding>
